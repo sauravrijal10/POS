@@ -1,0 +1,21 @@
+
+<odoo>
+    <menuitem id="menu_ecommerce_root"
+              name="Ecommerce_POS"
+              sequence = "10">
+        <menuitem id="menu_ecommerce_operation"
+                name="User">
+                <menuitem name="User" id="menu_user" action="Ecommerce_POS.action_ecommerce_user" />
+                
+        </menuitem>
+    </menuitem>
+
+    <!-- <menuitem id="menu_ecommerce_operation"
+              name="User"
+              parent = "menu_ecommerce_root"
+              sequence = "10"/>
+    <menuitem id="menu_user"
+              name="User"
+              parent = "menu_ecommerce_operation"
+              sequence = "10"/> -->
+</odoo>
