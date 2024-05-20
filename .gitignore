@@ -1,0 +1,58 @@
+# Byte-compiled / optimized Python files
+__pycache__/
+*.py[cod]
+
+odoo/
+odoo-venv/
+# Odoo specific files
+*.orig
+*.log
+*.sublime-workspace
+*.egg-info/
+__pycache__/
+__manifest__.pyc
+__init__.pyc
+*.pyc
+*.pyo
+*.bak
+*.swp
+*.swo
+*.sql
+
+odoo.conf
+
+# SQLite database file
+*.sqlite3
+
+# Node.js dependencies
+node_modules/
+
+# Miscellaneous
+.DS_Store
+.idea/
+.vscode/
+*.bak
+*.log
+*.pyc
+*.pyo
+*.orig
+*~
+.*.sw[op]
+.idea
+.project
+*.suo
+*.pyc
+*.orig
+*.log
+*.pyc
+*.pyo
+*.orig
+*.bak
+*.swp
+*.swo
+*.sql
+*.egg-info/
+.vscode/
+*.sublime-workspace
+__pycache__/
+*.DS_Store
