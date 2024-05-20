@@ -3,7 +3,7 @@ __pycache__/
 *.py[cod]
 
 odoo/
-odoo-venv/
+venv/
 # Odoo specific files
 *.orig
 *.log
