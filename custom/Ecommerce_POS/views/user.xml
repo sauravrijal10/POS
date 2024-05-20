@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<!-- <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <record id="action_ecommerce_user" model="ir.actions.act_window">
         <field name="name">ECommerce Users</field>
@@ -6,15 +6,84 @@
         <field name="view_mode">tree,form</field>
         <field name="view_id" ref="view_ecommerce_user_tree"/>
         <field name="help" type="html">
-            <!-- <p class="oe_view_nocontent_create">
+            <p class="oe_view_nocontent_create">
                 Click to create a new eCommerce user.
             </p> -->
-        </field>
-    </record>
+        <!-- </field> -->
+    <!-- </record> -->
     <!-- <menuitem id='menu_product'
         name="User"
         parent = 'menu_ecommerce_operation'
         action = 'action_ecommerce_user'
         sequence="10"/> -->
 
+<!-- </odoo>  -->
+<odoo>
+    <record id="view_ecommerce_user_form" model="ir.ui.view">
+        <field name="name">ecommerce.user.form</field>
+        <field name="model">res.partner</field>
+        <field name="arch" type="xml">
+            <form string="ECommerce User">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="email"/>
+                        <field name="phone"/>
+                        <!-- <field name="preferred_payment_method"/> -->
+                        <!-- <field name="date_of_birth"/> -->
+                        <!-- <field name="email_verified"/> -->
+                        <!-- <field name="is_subscribed_to_newsletter"/> -->
+                    </group>
+                    <!-- <notebook>
+                        <page string="Orders">
+                            <field name="order_ids" context="{'default_partner_id': active_id}">
+                                <tree string="Orders">
+                                    <field name="name"/>
+                                    <field name="date_order"/>
+                                    <field name="amount_total"/>
+                                    <field name="state"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page string="Wishlist">
+                            <field name="wishlist_ids">
+                                <tree string="Wishlist">
+                                    <field name="product_id"/>
+                                    <field name="quantity"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook> -->
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_ecommerce_user_tree" model="ir.ui.view">
+        <field name="name">ecommerce.user.tree</field>
+        <field name="model">res.partner</field>
+        <field name="arch" type="xml">
+            <tree string="ECommerce Users">
+                <field name="name"/>
+                <field name="email"/>
+                <field name="phone"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_ecommerce_user" model="ir.actions.act_window">
+        <field name="name">ECommerce Users</field>
+        <field name="res_model">res.partner</field>
+        <field name="view_mode">tree,form</field>
+        <!-- <field name="view_id" ref="view_ecommerce_user_tree"/> -->
+        <!-- <field name="help" type="html"> -->
+            <!-- <p class="oe_view_nocontent_create">
+                Click to create a new eCommerce user.
+            </p> -->
+        <!-- </field> -->
+    </record>
+
+    <menuitem id="menu_user" name="Users"
+              parent="menu_ecommerce_operation"
+              action="action_ecommerce_user" sequence="10"/>
 </odoo>
