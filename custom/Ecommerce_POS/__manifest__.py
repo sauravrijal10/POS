@@ -1,9 +1,10 @@
 {
     'name':'Ecommerce_POS',
-    'depends':['base'],
+    'depends':['base','product'],
     'data':[
         'security/ir.model.access.csv',
         'views/menu.xml',
         'views/user.xml',
+        'views/product.xml',
     ]
 }

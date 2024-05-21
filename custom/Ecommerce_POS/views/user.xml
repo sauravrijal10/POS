@@ -84,6 +84,6 @@
     </record>
 
     <menuitem id="menu_user" name="Users"
-              parent="menu_ecommerce_operation"
+              parent="menu_ecommerce_useroperation"
               action="action_ecommerce_user" sequence="10"/>
 </odoo>
