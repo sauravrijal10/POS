@@ -2,7 +2,9 @@ from odoo import models, fields, api, _
 
 class User(models.Model):
     _name = 'custom.user'
-    _inherits = {'res.partner':'partner_id'}
+    # _inherits = {'res.partner':'partner_id'}
+    _inherits = {'res.partner': 'partner_id'}
+
 
     username = fields.Char(string='Username', required=True, tracking=True)
     password = fields.Char(string='Password', required=True)
