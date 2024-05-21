@@ -30,12 +30,11 @@
 
     <record id="action_ecommerce_product" model="ir.actions.act_window">
         <field name="name">Custom Products</field>
-        <field name="res_model">product.template</field>
+        <field name="res_model">custom.product</field>
         <field name="view_mode">tree,form</field>
     </record>
 
-    <!-- <menuitem id="menu_custom_product_root" name="Custom Products"/>
-    <menuitem id="menu_custom_product" parent="menu_custom_product_root" action="action_custom_product" name="Manage Custom Products"/> -->
+  
     <menuitem id="menu_product" name="Products"
         parent="menu_ecommerce_productoperation"
         action="action_ecommerce_product" sequence="10"/>
