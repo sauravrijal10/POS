@@ -2,18 +2,28 @@
 <odoo>
     <menuitem id="menu_ecommerce_root"
               name="Ecommerce_POS"
-              sequence = "10">
+              sequence = "5">
        
     </menuitem>
+    <menuitem id="menu_ecommerce_productoperation"
+        name="Product"
+        parent = "menu_ecommerce_root"
+        sequence = "20"/>
+    <menuitem id="menu_product"
+        name="Product"
+        parent = "menu_ecommerce_productoperation"
+        sequence = "10"/>
 
-    <menuitem id="menu_ecommerce_operation"
+    <menuitem id="menu_ecommerce_useroperation"
               name="User"
               parent = "menu_ecommerce_root"
               sequence = "10"/>
     <menuitem id="menu_user"
               name="User"
-              parent = "menu_ecommerce_operation"
+              parent = "menu_ecommerce_useroperation"
               sequence = "10"/>
+   
+
 
                   <!-- <menuitem id="menu_ecommerce_root"
                             name="Ecommerce_POS"
