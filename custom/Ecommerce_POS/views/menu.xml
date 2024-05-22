@@ -9,10 +9,15 @@
         name="Product"
         parent = "menu_ecommerce_root"
         sequence = "20"/>
+    
     <menuitem id="menu_product"
         name="Product"
         parent = "menu_ecommerce_productoperation"
         sequence = "10"/>
+    <!-- <menuitem id="menu_session"
+        name="Product"
+        parent = "menu_ecommerce_productoperation"
+        sequence = "10"/> -->
 
     <menuitem id="menu_ecommerce_useroperation"
               name="User"
@@ -21,6 +26,14 @@
     <menuitem id="menu_user"
               name="User"
               parent = "menu_ecommerce_useroperation"
+              sequence = "10"/>
+    <menuitem id="menu_ecommerce_sessionoperation"
+              name="Session"
+              parent = "menu_ecommerce_root"
+              sequence = "30"/>
+    <menuitem id="menu_session"
+              name="Session"
+              parent = "menu_ecommerce_sessionoperation"
               sequence = "10"/>
    
 
