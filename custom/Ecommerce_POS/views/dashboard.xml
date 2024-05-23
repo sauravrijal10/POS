@@ -1,16 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0"?>
 <odoo>
-    <!-- <record id="custom_view_pos_session_shop" model="ir.ui.view">
-        <field name="name">pos.session.shop.custom.view</field>
-        <field name="model">pos.session.shop</field>
-        <field name="inherit_id" ref="point_of_sale.view_pos_session_shop"/>
-        <field name="arch" type="xml">
-            Make your customizations here -->
-            <!-- For example, you can add a new field or modify existing ones -->
-            <!-- <field name="custom_field" position="after">
-                <field name="another_custom_field"/>
-            </field> -->
-        <!-- </field> -->
-    <!-- </record>  -->
-
+    <data>
+        
+       <!--  <record id="inherit_pos_dashboard_view" model="ir.ui.view">
+            <field name="name">pos.dashboard</field>
+            <field name="model">pos.config</field>
+            <field name="inherit_id" ref="point_of_sale.view_pos_config_kanban"/>
+            <field name="arch" type="xml">
+               
+                <xpath expr="//div[@name='pos_dashboard_widgets']" position="inside">
+                    <div class="oe_pos_dashboard_custom_widget">
+                        
+                    </div>
+                </xpath> 
+            </field>
+        </record>-->
+    </data> 
 </odoo>
