@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <odoo>
+    <record id="view_pos_config_inherit" model="ir.ui.view">
+        <field name="name">pos.config.inherit.form</field>
+        <field name="model">custompos.config</field>
+        <field name="inherit_id" ref="point_of_sale.pos_config_view_form"/>
+        <field name="arch" type="xml">
+        
+        </field>
+    </record>
+</odoo> -->
+
+<odoo>
+    <record id="view_pos_config_inherit" model="ir.ui.view">
+        <field name="name">pos.config.inherit.form</field>
+        <field name="model">custompos.config</field>
+        <field name="inherit_id" ref="point_of_sale.pos_config_view_form"/>
+        <field name="arch" type="xml">
+            <data>
+
+            </data>
+
+        </field>
+    </record>
+
+    <!-- <record id="action_view_pos_config_inherit" model="ir.actions.act_window">
+        <field name="name">POS Configuration</field>
+        <field name="res_model">custompos.config</field>
+        <field name="view_mode">form,tree</field>
+    </record> -->
+
+    <record id="action_view_pos_interface" model="ir.actions.client">
+        <field name="name">Point of Sale</field>
+        <field name="tag">point_of_sale</field>
+        <!-- You may add additional context or parameters here if needed -->
+    </record>
+
+    <menuitem id="menu_action_custom_pos_config"
+        name="POS Configurations"
+        parent="menu_ecommerce_dashboardoperation"
+        action = "action_view_pos_interface"
+        sequence="10"/>
+</odoo>
