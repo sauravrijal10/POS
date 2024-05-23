@@ -4,15 +4,14 @@
         <field name="name">custom.product.form</field>
         <field name="model">custom.product</field>
         <field name="arch" type="xml">
-            <form string="Custom Product">
+            <!-- <form string="Custom Product"> -->
                 <sheet>
                     <group>
                         <field name="name"/>
-                        <field name="custom_product_id"/>
                         <!-- Add other inherited fields from product.template as needed -->
                     </group>
                 </sheet>
-            </form>
+            <!-- </form> -->
         </field>
     </record>
 
