@@ -1,0 +1,5 @@
+<template xml:space="preserve">
+    <t t-name="owl.OwlSalesDashboard" owl="1">
+        <h1>Custom Sales Dashboard</h1>
+    </t>
+</template>
