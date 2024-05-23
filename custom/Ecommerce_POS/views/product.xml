@@ -1,40 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
+
+    
     <record id="view_custom_product_form" model="ir.ui.view">
-        <field name="name">custom.product.form</field>
-        <field name="model">custom.product</field>
-        <field name="arch" type="xml">
-            <form string="Custom Product">
-                <sheet>
-                    <group>
-                        <field name="name"/>
-                        <field name="custom_product_id"/>
-                        <!-- Add other inherited fields from product.template as needed -->
-                    </group>
-                </sheet>
-            </form>
-        </field>
-    </record>
+    <field name="name">custom.product.form</field>
+    <field name="model">product.template</field> <!-- Updated model name -->
+    <field name="inherit_id" ref="product.product_template_only_form_view"/>
+    <field name="arch" type="xml">
+        <!-- Add the custom_product_id field -->
+        <xpath expr="//field[@name='barcode']" position="before">
+            <field name="custom_product_id"/>
+        </xpath>
+        
+        <!-- Add any other modifications as needed -->
+        <xpath expr="//field[@name='default_code']" position="attributes">
+            <attribute name="invisible">1</attribute>
+        </xpath>
+        <xpath expr="//notebook/page[position()=2]" position="attributes">
+            <attribute name="invisible">1</attribute>
+        </xpath>    
+    </field>
+</record>
+
+
 
     <record id="view_custom_product_tree" model="ir.ui.view">
         <field name="name">custom.product.tree</field>
-        <field name="model">custom.product</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_tree_view"/>
         <field name="arch" type="xml">
-            <tree string="Custom Products">
-                <field name="name"/>
+            <xpath expr="//field[@name='priority']" position="before">
                 <field name="custom_product_id"/>
-                <!-- Add other inherited fields from product.template as needed -->
-            </tree>
+            </xpath>
+            
+            <xpath expr="//field[@name='default_code']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            
         </field>
     </record>
 
     <record id="action_ecommerce_product" model="ir.actions.act_window">
         <field name="name">Custom Products</field>
-        <field name="res_model">custom.product</field>
+        <field name="res_model">product.template</field>
         <field name="view_mode">tree,form</field>
     </record>
 
-  
+    <!-- <menuitem id="menu_custom_product_root" name="Custom Products"/>
+    <menuitem id="menu_custom_product" parent="menu_custom_product_root" action="action_custom_product" name="Manage Custom Products"/> -->
     <menuitem id="menu_product" name="Products"
         parent="menu_ecommerce_productoperation"
         action="action_ecommerce_product" sequence="10"/>
