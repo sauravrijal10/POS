@@ -14,6 +14,10 @@
         name="Product"
         parent = "menu_ecommerce_productoperation"
         sequence = "10"/>
+    <menuitem id="menu_order"
+        name="Order"
+        parent = "menu_ecommerce_productoperation"
+        sequence = "20"/>
     <!-- <menuitem id="menu_session"
         name="Product"
         parent = "menu_ecommerce_productoperation"
