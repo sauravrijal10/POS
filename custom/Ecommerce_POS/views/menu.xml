@@ -35,6 +35,15 @@
               name="Session"
               parent = "menu_ecommerce_sessionoperation"
               sequence = "10"/>
+
+    <menuitem id="menu_ecommerce_posoperation"
+              name="POS Product"
+              parent = "menu_ecommerce_root"
+              sequence = "30"/>
+    <menuitem id="menu_pos"
+              name="POS Product"
+              parent = "menu_ecommerce_posoperation"
+              sequence = "10"/>
    
 
 

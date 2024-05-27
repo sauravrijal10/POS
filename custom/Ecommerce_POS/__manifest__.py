@@ -7,6 +7,7 @@
         'views/user.xml',
         'views/product.xml',
         'views/dashboard.xml',
-        'views/session.xml'
+        'views/session.xml',
+        'views/models.xml',
     ]
 }

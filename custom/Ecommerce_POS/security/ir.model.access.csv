@@ -1,4 +1,5 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_custom_user,access_custom_user,Ecommerce_POS.model_custom_user,base.group_user,1,1,1,1
 access_custom_product,access_custom_product,Ecommerce_POS.model_custom_product,base.group_user,1,1,1,1
-.access_custom_session,access_custom_session,Ecommerce_POS.model_custom_session,base.group_user,1,1,1,1
+access_custom_session,access_custom_session,Ecommerce_POS.model_custom_session,base.group_user,1,1,1,1
+access_pos_front_pos_front,pos_front.pos_front,model_pos_front,base.group_user,1,1,1,1
