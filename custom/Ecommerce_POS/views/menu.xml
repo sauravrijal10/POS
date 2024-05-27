@@ -41,7 +41,7 @@
               sequence = "10"/>
     
     <menuitem id="menu_ecommerce_dashboardoperation"
-              name="Product"
+              name="POS Configurations"
               parent = "menu_ecommerce_root"
               sequence = "5"/>
 

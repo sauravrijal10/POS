@@ -7,8 +7,6 @@
         'views/user.xml',
         'views/product.xml',
         'views/posconfig.xml',
-        'views/dashboard.xml',
-        'views/session.xml',
         'views/order.xml',
     ]
 }
