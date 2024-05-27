@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Form view for the extended Point of Sale configuration -->
+        <record id="view_pos_config_form_inherit" model="ir.ui.view">
+            <field name="name">pos.config.form.inherit</field>
+            <field name="model">pos.config</field>
+            <field name="mode">primary</field>
+            <field name="inherit_id" ref="point_of_sale.view_pos_config_kanban"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='pos_session_state']" position="after">
+                    <!-- Add your custom fields to the Point of Sale configuration form -->
+                   
+                        <field name="shop_name"/>
+                        
+                        <!-- Add more fields as needed -->
+                    
+                </xpath>
+            </field>
+        </record>
+
+       
+          
+
+
+        <!-- Action to open the list of Point of Sale configurations -->
+        <record id="action_pos_config_tree_view" model="ir.actions.act_window">
+            <field name="name">Point of Sale Configurations</field>
+            <field name="res_model">pos.config</field>
+            <field name="view_mode">tree,form,kanban</field>
+            <field name="domain">[]</field>
+            <field name="context">{}</field>
+            
+        </record>
+
+       
+        
+    </data>
+     <menuitem id="menu_pos_shops"
+              name="Shops"
+              parent="menu_pos_config"
+              action="action_pos_config_tree_view"
+              sequence="22"/>
+                                
+</odoo>

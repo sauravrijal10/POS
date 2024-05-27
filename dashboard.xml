@@ -12,5 +12,14 @@
             </field> -->
         <!-- </field> -->
     <!-- </record>  -->
-
+   
+    <record id="action_pos_session_filtered" model="ir.actions.act_window">
+        <field name="name">Sessions</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">pos.session</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+        
+    <record id="custom_pos_dashboard_view" model="ir.ui.view">
+         <field name="name">pos.session.
 </odoo>

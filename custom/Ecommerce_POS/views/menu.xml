@@ -5,6 +5,10 @@
               sequence = "5">
        
     </menuitem>
+    <menuitem id="menu_ecommerce_dashboard"
+              name="Dashboard"
+              sequence="7">
+    </menuitem>          
     <menuitem id="menu_ecommerce_productoperation"
         name="Product"
         parent = "menu_ecommerce_root"
@@ -35,6 +39,27 @@
               name="Session"
               parent = "menu_ecommerce_sessionoperation"
               sequence = "10"/>
+    <menuitem id="menu_pos_config"
+              name="Configuration"
+              parent="menu_ecommerce_root"
+              sequence="35"/>
+    <menuitem id="menu_pos_shops"
+              name="Shops"
+              parent="menu_pos_config"
+              sequence="32"/>
+    <menuitem id="menu_pos_report"
+              name="Reports"
+              parent="menu_ecommerce_root"
+              sequence="31"/>
+    <menuitem id="menu_pos_order_report"
+              name="Orders"
+              parent="menu_pos_report"
+              sequence="33"/>
+    <menuitem id="menu_pos_order_report"
+              name="Sales Report"
+              parent="menu_pos_report"
+              sequence="36"/>
+                                  
    
 
 
