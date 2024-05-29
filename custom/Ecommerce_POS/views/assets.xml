@@ -1,0 +1,18 @@
+<odoo>
+    <data>
+        <!-- Define Custom Backend Assets -->
+        <!-- <record id="custom_backend_assets" model="ir.ui.view">
+            <field name="name">Custom Backend Assets</field>
+            <field name="inherit_id" ref="Ecommerce_POS.view_project_kanban_inherit"/>
+            <field name="arch" type="xml">
+                <data>
+                    
+                    <xpath expr="//div[@name='parent_view_name']" position="after">
+                        <script type="text/javascript" src="/Ecommerce_POS/static/src/js/session_redirect.js"/>
+                        <script type="text/javascript" src="/Ecommerce_POS/static/src/js/session_close_widget.js"/>
+                    </xpath>
+                </data>
+            </field>
+        </record> -->
+    </data>
+</odoo>

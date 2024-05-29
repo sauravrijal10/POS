@@ -1,4 +1,4 @@
-from odoo import models, fields
+from odoo import models, fields, api
 
 """ class CustomPOSConfig(models.Model):
     _name = 'custompos.config'
@@ -28,12 +28,21 @@ class PosConfig(models.Model):
         string='Config Printers'
     ) """
 
-from odoo import models, fields
 
 class PosConfig(models.Model):
     _inherit = 'pos.config'
 
-    custom_field = fields.Char(string='Custom Field')
+    custom_field = fields.Char(string='Custom Field') 
+
+   
+    def action_open_session(self):
+        # Your implementation for opening a session
+        pass
+
+   
+    def action_close_session(self):
+        # Your implementation for closing a session
+        pass
 
     
 
