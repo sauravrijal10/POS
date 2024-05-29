@@ -5,6 +5,7 @@ __pycache__/
 odoo/
 venv/
 odoo-venv/
+newvenv/
 # Odoo specific files
 *.orig
 *.log
