@@ -33,7 +33,8 @@ from odoo import models, fields
 class PosConfig(models.Model):
     _inherit = 'pos.config'
 
-    custom_field = fields.Char(string='Custom Field')
+    # custom_field = fields.Char(string='Custom Field')
+    epson_printer_ip = fields.Char(string='Epson Printer IP')
 
     
 
