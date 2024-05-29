@@ -49,7 +49,19 @@
               name="POS Configuration"
               parent="menu_ecommerce_dashboardoperation"
               sequence="10"/>
-
+    <menuitem id="menu_pos_report"
+              name="Reports"
+              parent="menu_ecommerce_root"
+              sequence="31"/>
+    <menuitem id="menu_pos_order_report"
+              name="Orders"
+              parent="menu_pos_report"
+              sequence="33"/>
+    <menuitem id="menu_pos_sales_report"
+              name="Sales Report"
+              parent="menu_pos_report"
+              sequence="34"/>
+  
    
 
 

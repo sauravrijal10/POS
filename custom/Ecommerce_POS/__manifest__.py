@@ -1,6 +1,6 @@
 {
     'name':'Ecommerce_POS',
-    'depends':['base','product','point_of_sale'],
+    'depends':['base','product','point_of_sale','sale','stock'],
     'data':[
         'security/ir.model.access.csv',
         'views/menu.xml',
@@ -8,5 +8,8 @@
         'views/product.xml',
         'views/posconfig.xml',
         'views/order.xml',
+        'views/report.xml',
+         'wizard/sales_details.xml',
+        # 'views/salesdetails.xml',
     ]
 }
