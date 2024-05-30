@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Form view for the extended Point of Sale configuration -->
+        <record id="view_pos_config_form_inherit" model="ir.ui.view">
+            <field name="name">pos.report.view</field>
+            <field name="model">pos.report</field>
+            <field name="mode">primary</field>
+            <field name="inherit_id" ref="point_of_sale.view_report_pos_order_graph"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='product_categ_id']" position="after">
+                    <!-- Add your custom fields to the Point of Sale configuration form -->
+                   
+                        <field name="name"/>
+                        
+                        <!-- Add more fields as needed -->
+                    
+                </xpath>
+            </field>
+        </record>
+
+       
+          
+
+
+        <!-- Action to open the list of Point of Sale configurations -->
+        <record id="action_report_view" model="ir.actions.act_window">
+            <field name="name">Point of Sale Report</field>
+            <field name="res_model">report.pos.order</field>
+            <field name="view_mode">graph,pivot</field>
+            <field name="domain">[]</field>
+            <field name="context">{}</field>
+            
+        </record>
+
+       
+        
+    </data>
+     <menuitem id="menu_pos_order_report"
+              name="Orders"
+              parent="menu_pos_report"
+              action="action_report_view"
+              sequence="33"/>
+                                
+</odoo>

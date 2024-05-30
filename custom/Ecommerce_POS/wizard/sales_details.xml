@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Form view for the extended Point of Sale configuration
+        <record id="view_pos_config_form_inherit" model="ir.ui.view">
+            <field name="name">pos.sales.details.inherit</field>
+            <field name="model">sales.details</field>
+            <field name="mode">primary</field>
+            <field name="inherit_id" ref="point_of_sale.view_pos_details_wizard"/>
+            <field name="arch" type="xml"> -->
+                <!-- <xpath expr="//field[@name='start_date']" position="after">   -->
+                    <!-- Add your custom fields to the Point of Sale configuration form -->
+                    <!-- <field name="name"/> -->
+                    <!-- Add more fields as needed -->
+                <!-- </xpath>
+            </field>
+        </record>  -->
+
+        <!--Action to open the list of Point of Sale configurations -->
+        <record id="action_sales_details_view" model="ir.actions.act_window">
+            <field name="name">Point of Sale Sales Details</field>
+            <field name="res_model">pos.details.wizard</field>
+            <field name="view_mode">form</field>
+            <!-- <field name="binding_model_id" ref="point_of_sale.view_pos_details_wizard"/>
+            <field name="binding_view_types">form,list</field>-->
+            <field name="target">new</field> 
+        </record>
+
+        <!-- Menu item to access the Point of Sale Sales Details action -->
+        <menuitem id="menu_pos_sales_report"
+                  name="Sales Report"
+                  parent="menu_pos_report"
+                  action="action_sales_details_view"
+                  sequence="34"/>
+    </data>
+</odoo>
