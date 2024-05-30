@@ -11,5 +11,12 @@
         'views/report.xml',
          'wizard/sales_details.xml',
         # 'views/salesdetails.xml',
-    ]
+        # 'views/client.xml'
+    ],
+    'assets': {
+        'point_of_sale.assets': [
+            'Ecommerce_POS/static/src/js/**/*',
+            'Ecommerce_POS/static/src/xml/**/*',
+        ],
+    },
 }
