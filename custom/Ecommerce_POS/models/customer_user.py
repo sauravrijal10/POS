@@ -11,3 +11,5 @@ class User(models.Model):
 
     channel_ids = fields.Many2many('mail.channel','mail_channel_profile_partner','partner_id','channel_id')
 
+    is_admin = fields.Boolean(string="Admin")
+
