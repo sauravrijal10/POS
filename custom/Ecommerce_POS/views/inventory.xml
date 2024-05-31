@@ -1,0 +1,13 @@
+<odoo>
+
+    <record id="action_ecommerce_inventory" model="ir.actions.act_window">
+        <field name="name">Custom Inventory</field>
+        <field name="res_model">stock.picking.type</field>
+        <field name="view_mode">kanban</field>
+    </record>
+
+    <menuitem id="menu_inventory" name="Inventory"
+        parent="menu_ecommerce_inventory"
+        action="action_ecommerce_inventory" sequence="10"/>
+
+</odoo>
