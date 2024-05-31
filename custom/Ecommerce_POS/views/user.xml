@@ -29,6 +29,7 @@
                         <field name="name"/>
                         <field name="email"/>
                         <field name="username"/>
+                        <field name="is_admin"/>
                         <field name="phone"/>                        
                         <field name="barcode"/>
                         <!-- <field name="preferred_payment_method"/> -->
@@ -72,6 +73,7 @@
                 <field name="username"/>
                 <field name="phone"/>
                 <field name="barcode"/>
+                <field name="is_admin"/>
 
             </tree>
         </field>
