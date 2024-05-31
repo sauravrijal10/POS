@@ -5,3 +5,5 @@ from . import order
 from . import report
 # from . import sales_details
 # from . import salesdetails
+from . import inventory
+from. import login_user

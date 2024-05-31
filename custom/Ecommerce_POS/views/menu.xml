@@ -62,8 +62,22 @@
               parent="menu_pos_report"
               sequence="34"/>
   
-   
+    <menuitem id="menu_ecommerce_inventory"
+              name="POS Inventory"
+              parent = "menu_ecommerce_root"
+              sequence = "20"/>
 
+    <menuitem id="menu_action_custom_stock_picking_type"
+              name="POS Inventory"
+              parent="menu_ecommerce_inventory"
+              sequence="10"/>
+
+    <menuitem id="menu_ecommerce_reportoperation"
+        name="Reporting"
+        parent = "menu_ecommerce_root"
+        sequence = "20"/>
+    
+    
 
                   <!-- <menuitem id="menu_ecommerce_root"
                             name="Ecommerce_POS"

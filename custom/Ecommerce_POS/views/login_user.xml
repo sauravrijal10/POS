@@ -1,0 +1,16 @@
+<odoo>
+
+
+
+    
+
+    <menuitem id="menu_ecommerce_login"
+              name="User Login"
+              parent = "menu_ecommerce_root"
+              sequence = "5"/>
+
+    <menuitem id="menu_action_loinstall"
+              name="User Login"
+              parent="menu_ecommerce_login"
+              sequence="10"/>
+</odoo>
