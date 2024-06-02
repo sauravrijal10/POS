@@ -1,0 +1,12 @@
+<!-- views/error_template.xml -->
+<odoo>
+    <template id="error_template" name="Error Template">
+        <t t-call="website.layout">
+            <div class="container">
+                <h1>Error</h1>
+                <p t-esc="error"/>
+                <a href="/create_user" class="btn btn-primary">Try Again</a>
+            </div>
+        </t>
+    </template>
+</odoo>
